@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Bubbling and Trickling</title>
+<style>
+  .grandparent {
+    padding: 50px;
+    border: 2px solid black;
+  }
+  .parent {
+    padding: 50px;
+    border: 2px solid black;
+  }
+  .child {
+    padding: 50px;
+    border: 2px solid black;
+  }
+</style>
+</head>
+<body>
+
+<div class="grandparent">
+  Grandparent Div
+  <div class="parent">
+    Parent Div
+    <div class="child">
+      Child Div
+    </div>
+  </div>
+</div>
+
+<script src="event.js">
+</script>
+
+</body>
+</html>
